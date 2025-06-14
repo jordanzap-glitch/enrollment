@@ -1,7 +1,6 @@
 <?php
 ob_start();
 error_reporting(0);
-session_start(); // Start the session
 include "../includes/db.php"; // Include database connection
 
 // Check if the admin is logged in
@@ -145,5 +144,5 @@ $totalPages = ceil($totalRows / $rowsPerPage); // Total number of pages
 
 <?php
 $conn->close();
-ob_flush(); // Close the database connection
+ob_end_flush(); // Close the database connection
 ?>
