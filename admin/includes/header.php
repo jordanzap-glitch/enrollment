@@ -2,10 +2,6 @@
 session_start(); // Start the session
 
 // Check if the admin is logged in
-if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true) {
-    header("Location: admin_login.php"); // Redirect to login if not logged in
-    exit();
-}
 
 // Get the admin's username (assuming it's stored in the session)
 $username = isset($_SESSION['username']) ? $_SESSION['username'] : 'Admin';

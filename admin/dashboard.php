@@ -4,10 +4,6 @@ error_reporting(0);
 include "../includes/db.php"; // Include database connection
 
 // Check if the admin is logged in
-if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true) {
-    header("Location: index.php"); // Redirect to login if not logged in
-    exit();
-}
 
 // Fetch data from tbl_admission
 $sql = "SELECT firstName, middleName, lastName, birthdate, gender, address, course, contactNumber, email FROM tbl_admission";
