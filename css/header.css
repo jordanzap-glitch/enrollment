@@ -1,0 +1,40 @@
+ header {
+            background: #2A3E5E;
+            color: #fff;
+            padding: 22px 0;
+            box-shadow: 0 4px 12px rgba(23, 64, 139, 0.08);
+        }
+        .header-logo {
+            display: flex;
+            align-items: center; /* Center logo vertically */
+        }
+        .header-logo img {
+            height: 56px;
+            max-width: 90px;
+            width: auto;
+            vertical-align: middle;
+        }
+        .college-name {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-left: 10px; /* Add some space between logo and college name */
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.2s;
+            padding-right: 1.5rem;
+        }
+        nav a:hover {
+            color: #F7C230; /* Change color on hover */
+        }
+        @media (max-width: 600px) {
+            .college-name {
+                font-size: 1.5rem; /* Adjusted for mobile */
+            }
+            nav a {
+                font-size: 1rem; /* Smaller font size for mobile */
+            }
+        }

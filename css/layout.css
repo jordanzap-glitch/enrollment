@@ -1,0 +1,84 @@
+body {
+            position: relative;
+            min-height: 100vh; /* Full height of the viewport */
+            font-family: Arial, sans-serif; /* Updated font */
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('../assets/img/srcback.jpg') no-repeat center center fixed;
+            background-size: cover;
+            opacity: 0.4; /* Increased opacity for better visibility */
+            z-index: -1; /* Place it behind other content */
+        }
+
+        .enroll-button {
+            position: relative;
+            z-index: 1; /* Ensure button is above the background */
+            border: none; /* Remove border */
+            padding: 0; /* Remove padding */
+            cursor: pointer; /* Change cursor to pointer */
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .enroll-button img {
+            animation: pulse 1.5s infinite; /* Apply the pulse animation */
+        }
+
+        .academic-container {
+            background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+            border-radius: 8px; /* Rounded corners */
+            padding: 25px; /* Increased padding for content */
+            margin: 20px; /* Margin between containers */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+        }
+
+        .enroll-container {
+            text-align: center; /* Center the button */
+            margin: 20px 0; /* Margin for spacing */
+        }
+
+        .program-title {
+            font-size: 2.5rem; /* Increased font size */
+            font-weight: bold; /* Bold text */
+            color: #2A3E5E; /* Title color */
+            text-align: center; /* Center the title */
+            margin: 40px 0; /* Margin for spacing */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+        }
+
+        .message-container {
+            background-color: rgba(255, 255, 255, 0.9); /* White background for the message container */
+            border-radius: 8px; /* Rounded corners */
+            padding: 20px; /* Padding for the container */
+            text-align: center; /* Center the text */
+            margin-bottom: 20px; /* Margin below the container */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+        }
+
+        .highlight {
+            font-size: 3rem; /* Increased font size for highlighted letters */
+            font-weight: bold; /* Bold text */
+            color: #2A3E5E; /* Color for highlighted letters */
+        }
+
+        .centered-container {
+            max-width: 400px; /* Set a maximum width for the container */
+            margin: 0 auto; /* Center the container */
+        }
